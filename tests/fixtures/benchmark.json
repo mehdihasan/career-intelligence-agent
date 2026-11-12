@@ -1,0 +1,152 @@
+{
+  "description": "Synthetic, manually labeled job-ad benchmark covering English, Swedish, Bengali, copied HTML, and inconsistent formatting.",
+  "ads": [
+    {
+      "id": "en-01",
+      "language": "en",
+      "format": "txt",
+      "content": "Northstar Labs is hiring a Backend Engineer in Toronto, Canada. Required: Python, PostgreSQL, and REST API experience. Nice to have: Kubernetes. English is required.",
+      "expected": {"company": "Northstar Labs", "title": "Backend Engineer", "country": "Canada", "source_language": "en", "required_skills": ["python", "postgresql", "rest api"], "preferred_skills": ["kubernetes"]}
+    },
+    {
+      "id": "sv-01",
+      "language": "sv",
+      "format": "txt",
+      "content": "Vi söker en Data Engineer till Fjord Data i Stockholm, Sverige. Du har erfarenhet av Python och SQL. Spark är meriterande. Svenska och engelska krävs.",
+      "expected": {"company": "Fjord Data", "title": "Data Engineer", "country": "Sweden", "source_language": "sv", "required_skills": ["python", "sql"], "preferred_skills": ["spark"]}
+    },
+    {
+      "id": "bn-01",
+      "language": "bn",
+      "format": "txt",
+      "content": "ঢাকার নদী টেক একজন সফটওয়্যার ইঞ্জিনিয়ার নিয়োগ করছে। প্রয়োজন: Java এবং PostgreSQL। Docker জানা থাকলে অগ্রাধিকার। ইংরেজিতে কাজ করার দক্ষতা দরকার।",
+      "expected": {"company": "Nodi Tech", "title": "Software Engineer", "country": "Bangladesh", "source_language": "bn", "required_skills": ["java", "postgresql"], "preferred_skills": ["docker"]}
+    },
+    {
+      "id": "en-02",
+      "language": "en",
+      "format": "html",
+      "content": "<nav>Home | Sign in | Search jobs</nav><h1>Platform Engineer</h1><h2>Orbit Systems - Vancouver, Canada</h2><p>Must have Linux and Kubernetes. Terraform is preferred. Apply now.</p>",
+      "expected": {"company": "Orbit Systems", "title": "Platform Engineer", "country": "Canada", "source_language": "en", "required_skills": ["linux", "kubernetes"], "preferred_skills": ["terraform"]}
+    },
+    {
+      "id": "en-03",
+      "language": "en",
+      "format": "md",
+      "content": "BrightPath Health\nRole: QA Automation Engineer\nLocation: Remote, Canada\nYou will create automated test suites. Required: Python and Playwright. Selenium is a plus.",
+      "expected": {"company": "BrightPath Health", "title": "QA Automation Engineer", "country": "Canada", "source_language": "en", "required_skills": ["python", "playwright"], "preferred_skills": ["selenium"]}
+    },
+    {
+      "id": "sv-02",
+      "language": "sv",
+      "format": "html",
+      "content": "<header>Jobb | Logga in | Cookies</header><h1>DevOps Engineer</h1><p>Arbetsgivare: Skog Cloud. Plats: Göteborg, Sverige. Erfarenhet av AWS och Terraform krävs. Argo CD är meriterande.</p>",
+      "expected": {"company": "Skog Cloud", "title": "DevOps Engineer", "country": "Sweden", "source_language": "sv", "required_skills": ["aws", "terraform"], "preferred_skills": ["argo cd"]}
+    },
+    {
+      "id": "bn-02",
+      "language": "bn",
+      "format": "md",
+      "content": "পদ: ডেটা বিশ্লেষক\nপ্রতিষ্ঠান: পদ্মা অ্যানালিটিক্স\nস্থান: ঢাকা, বাংলাদেশ\nপ্রয়োজনীয় দক্ষতা: SQL, Python\nঅতিরিক্ত সুবিধা: Tableau\nবাংলা ও ইংরেজি যোগাযোগের দক্ষতা দরকার।",
+      "expected": {"company": "Padma Analytics", "title": "Data Analyst", "country": "Bangladesh", "source_language": "bn", "required_skills": ["sql", "python"], "preferred_skills": ["tableau"]}
+    },
+    {
+      "id": "en-04",
+      "language": "en",
+      "format": "txt",
+      "content": "Mosaic Finance | Senior Java Developer | New York, USA\nMinimum 5 years. Required technologies: Java, Spring Boot, and PostgreSQL. Kafka experience is preferred.",
+      "expected": {"company": "Mosaic Finance", "title": "Senior Java Developer", "country": "United States", "source_language": "en", "required_skills": ["java", "spring boot", "postgresql"], "preferred_skills": ["kafka"]}
+    },
+    {
+      "id": "en-05",
+      "language": "en",
+      "format": "html",
+      "content": "<html><body><aside>Accept cookies / Sign in / Home</aside><main><h1>Machine Learning Engineer</h1><p>Company: Cedar AI</p><p>Location: Montreal, Canada</p><p>Required: Python, PyTorch. Experience with MLflow is a nice to have.</p></main></body></html>",
+      "expected": {"company": "Cedar AI", "title": "Machine Learning Engineer", "country": "Canada", "source_language": "en", "required_skills": ["python", "pytorch"], "preferred_skills": ["mlflow"]}
+    },
+    {
+      "id": "sv-03",
+      "language": "sv",
+      "format": "txt",
+      "content": "Kund: Ljus Mobility\nSöker: Frontendutvecklare\nOrt: Malmö\nKrav: TypeScript, React och tillgänglig webbdesign.\nMeriterande: Cypress.\nSvenska är ett krav; engelska används i teamet.",
+      "expected": {"company": "Ljus Mobility", "title": "Frontend Developer", "country": "Sweden", "source_language": "sv", "required_skills": ["typescript", "react"], "preferred_skills": ["cypress"]}
+    },
+    {
+      "id": "bn-03",
+      "language": "bn",
+      "format": "txt",
+      "content": "নীল আকাশ সাইবারসিকিউরিটি ঢাকায় Security Analyst খুঁজছে। SIEM এবং Linux আবশ্যক। Splunk অভিজ্ঞতা অতিরিক্ত সুবিধা।",
+      "expected": {"company": "Nil Akash Cybersecurity", "title": "Security Analyst", "country": "Bangladesh", "source_language": "bn", "required_skills": ["siem", "linux"], "preferred_skills": ["splunk"]}
+    },
+    {
+      "id": "en-06",
+      "language": "en",
+      "format": "md",
+      "content": "Maple Robotics - Embedded Software Engineer\nOttawa, Canada. We need C++, Linux, and embedded systems experience. ROS 2 is desirable. French is an asset.",
+      "expected": {"company": "Maple Robotics", "title": "Embedded Software Engineer", "country": "Canada", "source_language": "en", "required_skills": ["c++", "linux"], "preferred_skills": ["ros 2"]}
+    },
+    {
+      "id": "en-07",
+      "language": "en",
+      "format": "txt",
+      "content": "Employer: Aurora Commerce\nPosition: Product Manager, Data Platform\nLocation: Remote\nRequirements: SQL and product analytics. Familiarity with dbt is beneficial.",
+      "expected": {"company": "Aurora Commerce", "title": "Product Manager, Data Platform", "source_language": "en", "required_skills": ["sql", "product analytics"], "preferred_skills": ["dbt"]}
+    },
+    {
+      "id": "sv-04",
+      "language": "sv",
+      "format": "md",
+      "content": "Roll: Cloud Architect\nBolag: Vinter Energi\nPlats: Uppsala, Sverige\nKrav: Azure och nätverksarkitektur.\nÖnskvärt: Bicep och Kubernetes.\nArbetsspråk: svenska och engelska.",
+      "expected": {"company": "Vinter Energi", "title": "Cloud Architect", "country": "Sweden", "source_language": "sv", "required_skills": ["azure", "network architecture"], "preferred_skills": ["bicep", "kubernetes"]}
+    },
+    {
+      "id": "bn-04",
+      "language": "bn",
+      "format": "html",
+      "content": "<nav>হোম | সাইন ইন | চাকরি খুঁজুন</nav><h1>UX Designer</h1><p>কর্মী: রঙিন স্টুডিও। ঢাকা। Figma এবং user research আবশ্যক। Prototyping অভিজ্ঞতা পছন্দনীয়।",
+      "expected": {"company": "Rongin Studio", "title": "UX Designer", "country": "Bangladesh", "source_language": "bn", "required_skills": ["figma", "user research"], "preferred_skills": ["prototyping"]}
+    },
+    {
+      "id": "en-08",
+      "language": "en",
+      "format": "txt",
+      "content": "The Harbor Public Library is hiring an IT Support Specialist in Halifax. Required: Windows, Active Directory, and customer support. CompTIA A+ certification preferred.",
+      "expected": {"company": "Harbor Public Library", "title": "IT Support Specialist", "country": "Canada", "source_language": "en", "required_skills": ["windows", "active directory", "customer support"], "preferred_skills": ["comptia a+"]}
+    },
+    {
+      "id": "en-09",
+      "language": "en",
+      "format": "html",
+      "content": "<div>Apply now | Sign in | Cookie preferences</div><h1>Site Reliability Engineer</h1><p>Company: Polar Payments</p><p>Location: Toronto</p><p>Required: Kubernetes, Prometheus, and Python. Grafana experience is preferred.</p>",
+      "expected": {"company": "Polar Payments", "title": "Site Reliability Engineer", "country": "Canada", "source_language": "en", "required_skills": ["kubernetes", "prometheus", "python"], "preferred_skills": ["grafana"]}
+    },
+    {
+      "id": "sv-05",
+      "language": "sv",
+      "format": "txt",
+      "content": "Arbetsgivare: Ängsmark Media\nTjänst: UX Researcher\nPlats: Stockholm, Sverige\nDu planerar och genomför användarintervjuer. Erfarenhet av användbarhetstester krävs. Miro är meriterande.",
+      "expected": {"company": "Ängsmark Media", "title": "UX Researcher", "country": "Sweden", "source_language": "sv", "required_skills": ["user interviews", "usability testing"], "preferred_skills": ["miro"]}
+    },
+    {
+      "id": "bn-05",
+      "language": "bn",
+      "format": "txt",
+      "content": "প্রতিষ্ঠান: সবুজ এনার্জি। পদ: Project Manager। স্থান: চট্টগ্রাম, বাংলাদেশ। Agile delivery এবং stakeholder management আবশ্যক। Jira জানা থাকলে ভালো।",
+      "expected": {"company": "Shobuj Energy", "title": "Project Manager", "country": "Bangladesh", "source_language": "bn", "required_skills": ["agile delivery", "stakeholder management"], "preferred_skills": ["jira"]}
+    },
+    {
+      "id": "en-10",
+      "language": "en",
+      "format": "md",
+      "content": "Role: Data Governance Analyst\nCompany: Summit Insurance\nLocation: Calgary, Canada\nRequired qualifications include data quality and SQL. Collibra is an optional asset. Salary and education details were not provided.",
+      "expected": {"company": "Summit Insurance", "title": "Data Governance Analyst", "country": "Canada", "source_language": "en", "required_skills": ["data quality", "sql"], "preferred_skills": ["collibra"]}
+    },
+    {
+      "id": "sv-06",
+      "language": "sv",
+      "format": "html",
+      "content": "<header>Startsida | Logga in | Dela jobb</header><h1>Backendutvecklare</h1><p>Företag: Stjärna Bank</p><p>Plats: Stockholm</p><p>Java och Spring Boot är krav. Kafka är meriterande.</p>",
+      "expected": {"company": "Stjärna Bank", "title": "Backend Developer", "country": "Sweden", "source_language": "sv", "required_skills": ["java", "spring boot"], "preferred_skills": ["kafka"]}
+    }
+  ]
+}
